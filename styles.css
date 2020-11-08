@@ -6,12 +6,31 @@ body {
   font-size: 13px !important;
 }
 
-.border-primary {
-  color: hsl(263, 55%, 52%);
+.row {
+  /* border: 1px solid black; */
+  margin-right: 10px !important;
+  padding-left: 0px !important;
+}
+
+.col-3 {
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.col-3 .row {
+  margin-right: 0px !important;
+  padding-right: 0px !important;
 }
 
 .cards {
-  margin: 120px 225px;
+  margin: 115px 230px;
+  padding: 0px;
+  /* border: 1px solid black; */
+}
+
+.border-primary {
+  color: hsl(263, 55%, 52%);
 }
 
 #a {
@@ -31,6 +50,7 @@ body {
   border-radius: 10px;
   height: 300px;
   max-width: 270px;
+  margin-right: -10px;
 }
 
 #c {
@@ -101,4 +121,286 @@ body {
 #e .infos .sub_info {
   color: hsl(219, 29%, 14%);
   opacity: 70%;
+}
+
+@media (max-width: 375px) {
+  /*.row {
+    border: 1px solid black; 
+    margin-right: 10px !important;
+    padding-left: 0px !important;
+  }
+  
+  .col-3 {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  
+  .col-3 .row {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+  }*/
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .cards .row .col-9 #row_1 .col-md-8 {
+    margin: 15px -175px;
+    padding: 0px;
+    border: 1px solid black;
+  }
+
+  .cards .row .col-9 #row_1 .col-md-4 {
+    margin: 520px -125px;
+    padding: 0px;
+    border: 1px solid black;
+  }
+
+  .cards .row .col-9 #row_2 .col-md-8,
+  .cards .row .col-9 #row_2 .col-md-4 {
+    margin: 20px -140px;
+    padding: 0px;
+    border: 1px solid black;
+  }
+
+  .cards .row .col-3 .row .col-md-11 {
+    margin: 20px -140px;
+    padding: 0px;
+    border: 1px solid black;
+  } */
+
+  .border-primary {
+    color: hsl(263, 55%, 52%);
+  }
+
+  #a {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 83% 0%;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    min-width: 300px;
+    height: 480px;
+    margin: 15px -175px;
+  }
+
+  #b {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    height: 260px;
+    min-width: 300px;
+    margin: 0px -125px;
+    margin-top: 520px;
+  }
+
+  #c {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    height: 220px;
+    min-width: 300px;
+    margin-right: 25px;
+    color: hsl(219, 29%, 14%);
+    -webkit-box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    margin: 20px -175px;
+  }
+
+  #d {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    min-width: 300px;
+    height: 470px;
+    margin: 0px -125px;
+    margin-top: 260px;
+  }
+
+  #e {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    height: 560px;
+    min-width: 300px;
+    -webkit-box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    margin: 20px -160px;
+  }
+
+  .name {
+    color: hsl(0, 0%, 81%);
+  }
+
+  .profession {
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+  }
+
+  .info {
+    color: hsl(210, 46%, 95%);
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 25px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .sub_info {
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+    font-size: 13.5px;
+  }
+
+  #c .perfil p,
+  #e .perfil p {
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+  }
+
+  #c .infos .info,
+  #e .infos .info {
+    color: hsl(219, 29%, 14%);
+  }
+
+  #c .infos .sub_info,
+  #e .infos .sub_info {
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  ...;
+}
+
+@media (min-width: 992px) {
+  ...;
+}
+
+@media (min-width: 1440px) {
+  .row {
+    /* border: 1px solid black; */
+    margin-right: 10px !important;
+    padding-left: 0px !important;
+  }
+
+  .col-3 {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .col-3 .row {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .cards {
+    margin: 115px 230px;
+    padding: 0px;
+    /* border: 1px solid black; */
+  }
+
+  .border-primary {
+    color: hsl(263, 55%, 52%);
+  }
+
+  #a {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 83% 0%;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    max-width: 600px;
+    height: 300px;
+  }
+
+  #b {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    height: 300px;
+    max-width: 270px;
+    margin-right: -10px;
+  }
+
+  #c {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    height: 280px;
+    max-width: 270px;
+    margin-right: 25px;
+    color: hsl(219, 29%, 14%);
+    -webkit-box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+  }
+
+  #d {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    max-width: 600px;
+    height: 280px;
+  }
+
+  #e {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    height: 610px;
+    max-width: 280px;
+    -webkit-box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+    box-shadow: 12px 9px 15px -3px rgba(0, 0, 0, 0.11);
+  }
+
+  .name {
+    color: hsl(0, 0%, 81%);
+  }
+
+  .profession {
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+  }
+
+  .info {
+    color: hsl(210, 46%, 95%);
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 25px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .sub_info {
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+    font-size: 13.5px;
+  }
+
+  #c .perfil p,
+  #e .perfil p {
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+  }
+
+  #c .infos .info,
+  #e .infos .info {
+    color: hsl(219, 29%, 14%);
+  }
+
+  #c .infos .sub_info,
+  #e .infos .sub_info {
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+  }
 }
